@@ -1,0 +1,164 @@
+<! DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title> 
+NG Become Your Tutor
+</title>
+<link rel="stylesheet" href="NGn main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<section class="sub-header">
+    <nav>
+        <a href="NGn Home.html"> <img src="logo1.png" class="logo"></a>
+        <div class="nav-link" id="navlink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="NGn Home.html">Home</a></li>
+              <li><a href="NGn Courses.html">Courses</a></li>
+              <li><a href="NGn About.html">About Us</a></li>
+              <li><a href="NGn Find Tutor.html">Enroll</a></li>
+              <li><a href="NGn Contact Us.html">Contact Us</a></li>
+              
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1> Become a Tutor</h1>
+
+</section>
+
+                <!-- --Become tutor-- -->
+<section class="find-tutor row ">
+
+    <div  >
+
+    
+        <div class=" contact-col btutor" >
+            <h1 style="font-size: 50px;" >Connect As A Tutor</h1>
+            <h2>If you want to join as a student,
+                <a href="NGn Find Tutor.html" >click here.</a>
+
+            </h2><br>
+
+                <form action="bform.php" method="post" >
+
+                         <!--radio button-->
+                    <div class="radiobtn">
+                        Tutor Placement:
+                        <input id="tutor-place" type="checkbox" name="placement" value="place">
+                            <label for="tutor-place">At Tutor's Place</label>
+                        <input id="inperson" type="checkbox" name="placement" value="in">
+                            <label for="inperson">Inperson</label>
+                        <input id="online" type="checkbox" name="placement" value="on">
+                            <label for="online">Online</label>  
+                   </div> 
+
+                        <label for="name">Teacher Name</label><br>
+                            <input type="text" name="name" id="name" required><br>
+                        <label for="fname">Father/Husband Name</label><br> 
+                            <input type="text" name="fname" id="fname" required><br>
+
+                                <!---drop own list---->
+                        <span class="ddown">
+                            <label for="gender" >Gender</label>
+                                
+                                <select name="gender" id="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                        </span>   
+                        <br><br>
+                                    <!--radio button-->
+                        <div class="radiobtn">
+                                 Martial Status:
+                            <input id="single" type="radio" name="status" value="single">
+                                <label for="single">Single</label>
+                            <input id="married" type="radio" name="status" value="m">
+                                <label for="married">Married</label>
+                        </div>
+                        
+                        <label for="rel">Religion</label><br>
+                            <input type="text" name="rel" id="rel" required><br>  
+                        <label for="num">Phone No.</label><br>
+                            <input type="number" name="num" id="num" required><br> 
+                        <label for="subject">Subject</label><br>
+                           <input type="text" name="subject" id="subject" required><br>
+                        <label for="email">Email Address</label><br> 
+                           <input type="email" name="email" id="email" required><br>
+                        <label for="area">City|Area</label><br>                
+                            <input type="text" name="area" id="area" required><br>
+                                
+                        <button type="submit" class="hero-btn blue-btn">Apply</button>
+
+                </form>
+                        
+           
+        </div>
+
+        
+
+    </div>
+
+    <div class="float-img">
+        <img src="btutor2.png" >
+    </div>
+    
+
+</section>
+
+
+<!-- --- footer-- -->
+<section class="footer">
+    <h4>
+       About Us 
+    </h4>
+    <p>
+        To arrange a consultation and discover more about how much our tutoring services 
+        can help you to learn. </br>Contact us right away to find out more about our tutoring
+         services rather than waiting any longer!</br>
+        We appreciate you choosing <b><i>New Generation</i></b>, 
+        and we look forward to meeting you soon.
+         
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"> </i>
+        <i class="fa fa-whatsapp"> </i>
+        <i class="fa fa-twitter"> </i>
+        <i class="fa fa-linkedin"> </i>
+        <i class="fa fa-instagram"> </i>
+
+    </div>
+    <p>Join Us For Better Career Opportunities <i class="fa fa-briefcase"> </i></p>
+
+
+</section>
+
+<!-----javaScript for toggle menu------->
+<script>
+   var navlink = document.getElementById("navlink");
+
+    function showMenu()
+        {
+            navlink.style.right ="0";
+        }
+    function hideMenu()
+        {
+            navlink.style.right ="-200px";
+        }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

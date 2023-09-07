@@ -1,0 +1,154 @@
+<! DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title> 
+NG Find Your Tutor
+</title>
+<link rel="stylesheet" href="NGn main.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<section class="sub-header">
+    <nav>
+        <a href="NGn Home.html"> <img src="logo1.png" class="logo"></a>
+        <div class="nav-link" id="navlink">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="NGn Home.html">Home</a></li>
+              <li><a href="NGn Courses.html">Courses</a></li>
+              <li><a href="NGn About.html">About Us</a></li>
+              <li><a href="NGn Find a tutor.html">Enroll</a></li>
+              <li><a href="NGn Contact Us.html">Contact Us</a></li>
+              
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <h1>Find Your Tutor</h1>
+    
+
+</section>
+
+
+
+                <!-- --find tutor-- -->
+<section class="find-tutor row ">
+
+    <div >
+
+    
+        <div class="contact-col  ">
+            <h1 style="font-size: 50px;" >Connect With A Tutor</h1>
+            <h2>If you want to become a tutor,
+                <a href="NGn Become a tutor.html" >click here.</a>
+
+            </h2>
+
+            <p style="font-size: 20px; font-family: serif;">Simply register, get free demo
+                 class & study at the time of your choice with a teacher you like!
+                </p>
+
+     
+                        <form action="form.php" method="post">
+
+                            <label>Student Name<br>
+                                <input type="text" name="name" required></label><br>
+                            <label>Email Address<br> 
+                                <input type="email" name="email" required></label><br>
+        
+                            <label>Subject<br>
+                                <input type="text" name="subject" required></label><br>
+                            <label>City|Area<br>
+                                <input type="text" name="area" required></label><br>
+                            <label>Phone No.<br>
+                                <input type="number" name="number" required></label><br>
+                            <label>Requirments<br>
+                                <textarea rows="5" name="req" required></textarea></label><br>  
+
+                                    <!--radio button-->
+                            <div class="radiobtn">
+                                Tution Service:
+                                <input id="inperson" type="radio" name="service" value="in">
+                                <label for="inperson">Inperson</label>
+                                <input id="online" type="radio" name="service" value="on">
+                                <label for="online">Online</label>  
+                            </div> 
+                                
+                            <button type="submit" class="hero-btn blue-btn">Apply</button>
+
+                        </form>
+                        
+           
+        </div>
+
+        
+
+    </div>
+
+    <div class="float-img">
+        <img src="ftutor2.PNG" >
+    </div>
+    
+
+</section>
+
+
+    
+
+
+
+
+
+<!-- --- footer-- -->
+<section class="footer">
+    <h4>
+       About Us 
+    </h4>
+    <p>
+        To arrange a consultation and discover more about how much our tutoring services 
+        can help you to learn. </br>Contact us right away to find out more about our tutoring
+         services rather than waiting any longer!</br>
+        We appreciate you choosing <b><i>New Generation</i></b>, 
+        and we look forward to meeting you soon.
+         
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"> </i>
+        <i class="fa fa-whatsapp"> </i>
+        <i class="fa fa-twitter"> </i>
+        <i class="fa fa-linkedin"> </i>
+        <i class="fa fa-instagram"> </i>
+
+    </div>
+    <p>Join Us For Better Career Opportunities <i class="fa fa-briefcase"> </i></p>
+
+
+</section>
+
+<!-----javaScript for toggle menu------->
+<script>
+   var navlink = document.getElementById("navlink");
+
+    function showMenu()
+        {
+            navlink.style.right ="0";
+        }
+    function hideMenu()
+        {
+            navlink.style.right ="-200px";
+        }
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
